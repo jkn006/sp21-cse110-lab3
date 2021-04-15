@@ -1,1 +1,1 @@
-https://jkn006.github.io/Lab2/
+https://jkn006.github.io/sp21-cse110-lab3/
