@@ -1,0 +1,82 @@
+body {
+    background-color: aliceblue;
+}
+
+.myDiv {
+    background-color: white;
+    width: 350px;
+    height: 150px;
+    margin: 5px;
+    padding: 0px 0px 30px 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #000000;
+    display: inline-block;
+}
+
+.mediaBox {
+    max-width: 9in;
+    height: 14cm;
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 1vw;
+    border-style: double;
+    border-color: rgb(215 94 94);
+    display: block;
+}
+
+.listBox {
+    width: 20rem;
+    max-height: 14vh;
+    border-style: solid;
+    border-color: hsl(280, 24%, 63%);
+    border-radius: 10px;
+    margin: 0px 0px 0px 20px;
+}
+
+#topOfPage {
+    text-align: right;
+    position: sticky;
+    top: 20px;
+}
+
+
+
+h1 {
+    font-family: Lobster;
+    text-decoration: underline overline;
+    text-decoration-color: green;
+    text-align: center;
+}
+
+.header2:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+h3{
+    text-align: right;
+    color: orangered;
+}
+
+
+#detailBox:active {
+    color: red;
+}
+
+
+@font-face {
+    font-family: Lobster;
+    src: url(fonts/Lobster-Regular.ttf);
+}
+
+@font-face {
+    font-family: Tegomin;
+    src: url(fonts/NewTegomin-Regular.ttf);
+}
+
+p{
+    font-family: Tegomin;
+}
