@@ -5,6 +5,7 @@
         <meta name="author" content="James Nguyen">
         <meta name="description" content="Journal that descibes the past three days.">
         <link rel="icon" href="multimedia/journal.png">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <main>
@@ -22,13 +23,15 @@
                 <h2>Navigation</h2>
                 <nav>
                     <ul>
-                        <li><a href="#top">Top of the Page</a></li>
                         <li><a href="#d1">Day 1</a></li>
                         <li><a href="#d2">Day 2</a></li>
                         <li><a href="#d3">Day 3</a></li>
                         <li><a href="#form">New Journal Form</a></li>
                     </ul>
                 </nav>
+            </div>
+            <div id="topOfPage">
+                <a href="#top">Top of the Page</a>
             </div>
             <hr>
             <section>
@@ -42,16 +45,20 @@
                     which I kind of regretted later. The only problem for the rest of the day was that my arm became so sore afterwards that I couldn't lift my arm or do anything with
                     it for the next day.
                 </p>
-                <p>Also, just in case you haven't been enlightened on the greatness that is Nashville Hot Chicken Tenders, I'll give you a quick sample below of the feast I had that
-                    made my day so great:
-                </p>
-                <img src="multimedia/breds.png" alt="Chicken Image">
-                <details>
-                    <summary>Bred's Hot Chicken</summary>
-                    <p>This is from a food truck that goes around the orange county area where I'm from that sells the chicken shown above. Honestly, compared to places like 
-                        Raising Caines and other chicken tenders places, I don't think there's an area that beats this in value and flavor overall.
+                <div class = mediaBox>
+                    <p>Also, just in case you haven't been enlightened on the greatness that is Nashville Hot Chicken Tenders, I'll give you a quick sample below of the feast I had that
+                        made my day so great:
                     </p>
-                </details>
+                    <img src="multimedia/breds.png" alt="Chicken Image">
+                </div>
+                <div id = detailBox>
+                    <details>
+                        <summary>Bred's Hot Chicken</summary>
+                        <p>This is from a food truck that goes around the orange county area where I'm from that sells the chicken shown above. Honestly, compared to places like 
+                            Raising Caines and other chicken tenders places, I don't think there's an area that beats this in value and flavor overall.
+                        </p>
+                    </details>
+                </div>
                 <p>Honestly, if that doesn't make your mouth water just by looking at it ... that just means you have different preferences and I respect that. </p>
             </section>
             <hr>
@@ -75,20 +82,24 @@
                     today for me would be the emergency meeting that I had to attend that happened right before I began working on this lab. Other than that this day was just 
                     lectures and homework yet again. As for things that I have planned today, I have to:
                 </p>
-                <ol>
-                    <li>Finish this lab.</li>
-                    <li>Eat dinner with my family.</li>
-                    <li>Get in some exercise or move my body in some way.</li>
-                    <li>Get ready for tomorrow's classes.</li>
-                    <li>Relax and destress.</li>
-                </ol>
+                <div class = listBox>
+                    <ol>
+                        <li>Finish this lab.</li>
+                        <li>Eat dinner with my family.</li>
+                        <li>Get in some exercise or move my body in some way.</li>
+                        <li>Get ready for tomorrow's classes.</li>
+                        <li>Relax and destress.</li>
+                    </ol>
+                </div>
                 <p>The plan is to hopefully get everything done on time and in this order so that I can go to sleep without having to worry about everything I have to do when I
                     wake up. Also hopefully I can somewhat fix my sleep schedule so I can feel refreshed when I have to wake up for my morning classes in the future.
                 </p>
-                <p>Now, I will just end this off with a random video I found on the internet. Hope you enjoyed.</p>
-                <video controls>
-                    <source src="multimedia/MmmMonkey.mp4" type="video/mp4">
-                </video>
+                <div class = mediaBox>
+                    <p>Now, I will just end this off with a random video I found on the internet. Hope you enjoyed.</p>
+                    <video controls>
+                        <source src="multimedia/MmmMonkey.mp4" type="video/mp4">
+                    </video>
+                </div>
             </section>
             <hr>
             <form>
