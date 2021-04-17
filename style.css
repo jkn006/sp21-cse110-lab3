@@ -1,6 +1,11 @@
-body {
-    background-color: aliceblue;
+* {
+    color: rgb(97, 54, 54);
 }
+
+body {
+    background-color: rgb(250, 238, 226);
+}
+
 
 .myDiv {
     background-color: white;
@@ -14,17 +19,40 @@ body {
     display: inline-block;
 }
 
-.mediaBox {
+#videoBox {
     max-width: 9in;
     height: 14cm;
     margin-top: 10pt;
     margin-bottom: 10pt;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
     padding-bottom: 1vw;
+    padding-top: 1vw;
+    border-style: solid;
+    border-color: black;
+    display: block;
+}
+
+#imageBox {
+    width: 6in;
+    height: 15cm;
     border-style: double;
     border-color: rgb(215 94 94);
+    padding-left: 2vw;
+    padding-right: 2vw;
     display: block;
+}
+
+#audioBox {
+    width: 8cm;
+    height: 45pt;
+    border-style: solid;
+    border-color:hsl(234, 68%, 28%);
+    border-radius: 30px;
+}
+
+#imageBox, #audioBox, #videoBox {
+    grid-area: media;
 }
 
 .listBox {
@@ -42,7 +70,38 @@ body {
     top: 20px;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 50px 600px 300px 550px auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        ". header header header header"
+        "media media media main main"
+        "media media media . ."
+        ". footer footer . date";
+}
 
+.flexBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+[id|="form"] {
+    text-decoration: underline;
+    text-decoration-color: green;
+}
+
+.main {
+    grid-area: main;
+}
+
+
+.footer {
+    grid-area: footer;
+}
 
 h1 {
     font-family: Lobster;
@@ -51,12 +110,21 @@ h1 {
     text-align: center;
 }
 
-.header2:hover {
+.header2 {
+    text-align: center;
+    grid-area: header;
     text-decoration: underline;
     text-decoration-color: red;
 }
 
+.holder:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: black;
+}
+
 h3{
+    grid-area: date;
     text-align: right;
     color: orangered;
 }
