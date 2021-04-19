@@ -1,3 +1,11 @@
+@media (max-width: 1897px) {
+    div.main {
+        border-style: solid;
+        border-color: red;
+        background-color: rgb(238, 127, 87);
+    }
+}
+
 * {
     color: rgb(97, 54, 54);
 }
@@ -6,6 +14,31 @@ body {
     background-color: rgb(250, 238, 226);
 }
 
+section li {
+    text-shadow: 2px 2px 5px black;
+}
+
+header>p {
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+video ~ p{
+    color: brown;
+    background-color: yellowgreen;
+}
+
+summary + p {
+    color: red;
+}
+
+div.main {
+    border-left-style: solid;
+    border-right-style: none; 
+    border-top-style: dotted; 
+    border-bottom-style: dotted; 
+    padding-left: 25px;
+}
 
 .myDiv {
     background-color: white;
@@ -17,6 +50,7 @@ body {
     border-style: solid;
     border-color: #000000;
     display: inline-block;
+    position: static;
 }
 
 #videoBox {
@@ -78,7 +112,7 @@ body {
         ". header header header header"
         "media media media main main"
         "media media media . ."
-        ". footer footer . date";
+        "footer footer footer . date";
 }
 
 .flexBox {
@@ -130,7 +164,7 @@ h3{
 }
 
 
-#detailBox:active {
+.changeColor:active {
     color: red;
 }
 
