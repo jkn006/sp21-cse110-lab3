@@ -1,4 +1,7 @@
+/*Use media query in order to give a visual queue to users that the window size
+is smaller than default resulting in a side scroll bar to appear at the bottom.*/
 @media (max-width: 1897px) {
+    /*Change main text boxes to become red to signify difference.*/
     div.main {
         border-style: solid;
         border-color: red;
@@ -6,32 +9,39 @@
     }
 }
 
+/*Change text color for entire document to the designated color.*/
 * {
     color: rgb(97, 54, 54);
 }
 
+/*Change color of the main page to designated color.*/
 body {
     background-color: rgb(250, 238, 226);
 }
 
+/*Add shadow to list within this section.*/
 section li {
     text-shadow: 2px 2px 5px black;
 }
 
+/*Underline the main description text.*/
 header>p {
     text-decoration: underline;
     text-decoration-color: black;
 }
 
+/*Change video description text properties.*/
 video ~ p{
     color: brown;
     background-color: yellowgreen;
 }
 
+/*Change properties of text in the more information section of the image.*/
 summary + p {
     color: red;
 }
 
+/*Create a specific border around the main text blocks of each day.*/
 div.main {
     border-left-style: solid;
     border-right-style: none; 
@@ -40,6 +50,7 @@ div.main {
     padding-left: 25px;
 }
 
+/*Create the navigation box with specific border and color options*/
 .myDiv {
     background-color: white;
     width: 350px;
@@ -53,6 +64,7 @@ div.main {
     position: static;
 }
 
+/*Create a box that contains the video and all related items*/
 #videoBox {
     max-width: 9in;
     height: 14cm;
@@ -67,6 +79,7 @@ div.main {
     display: block;
 }
 
+/*Create a box that contains the image and all related items*/
 #imageBox {
     width: 6in;
     height: 15cm;
@@ -77,6 +90,7 @@ div.main {
     display: block;
 }
 
+/*Create a box that contains the audio and all related items*/
 #audioBox {
     width: 8cm;
     height: 45pt;
@@ -85,10 +99,12 @@ div.main {
     border-radius: 30px;
 }
 
+/*Set all media boxes to occupy the media space within the grid defined below.*/
 #imageBox, #audioBox, #videoBox {
     grid-area: media;
 }
 
+/*Create a box that separates the list in day three from the text around it.*/
 .listBox {
     width: 20rem;
     max-height: 14vh;
@@ -98,16 +114,21 @@ div.main {
     margin: 0px 0px 0px 20px;
 }
 
+/*Create a "button" that sticks to the top of the page as the user scrolls which, when pressed, 
+will take the user back to the top of the page.*/
 #topOfPage {
     text-align: right;
     position: sticky;
     top: 20px;
 }
 
+/*Define a grid container with the following layout format.*/
 .container {
     display: grid;
+    /*Allocate grid area sizes as defined below.*/
     grid-template-columns: 50px 600px 300px 550px auto;
     grid-template-rows: auto;
+    /*Define layout of grid as follows:*/
     grid-template-areas: 
         ". header header header header"
         "media media media main main"
@@ -115,35 +136,44 @@ div.main {
         "footer footer footer . date";
 }
 
+/*Define a flexbox container.*/
 .flexBox {
     display: flex;
+    /*Place objects in the flexbox from left to right.*/
     flex-direction: row;
+    /*In case objects fill up line, wrap the items to the next line.*/
     flex-wrap: wrap;
+    /*If there is space left over in the line, fill it by placing spaces in between objects.*/
     justify-content: space-between;
 
 }
 
+/*Set all items with an id starting with form to the following.*/
 [id|="form"] {
     text-decoration: underline;
     text-decoration-color: green;
 }
 
+/*Create a class to assign to things we wish to place in the main section of our grid.*/
 .main {
     grid-area: main;
 }
 
-
+/*Create a class to assign to things we wish to place in the footer section of our grid.*/
 .footer {
     grid-area: footer;
 }
 
+/*Change the properties of the main title to be the following.*/
 h1 {
+    /*Change font to be the Lobster font.*/
     font-family: Lobster;
     text-decoration: underline overline;
     text-decoration-color: green;
     text-align: center;
 }
 
+/*Class that changes the attributes of h2 sections to the following.*/
 .header2 {
     text-align: center;
     grid-area: header;
@@ -151,34 +181,39 @@ h1 {
     text-decoration-color: red;
 }
 
+/*Class that creates a bold underline when items are hovered over.*/
 .holder:hover {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-decoration-color: black;
 }
 
+/*Change the h3 heading to be in the date area of our grid and to change the properties
+to the following.*/
 h3{
     grid-area: date;
     text-align: right;
     color: orangered;
 }
 
-
+/*Class that changes color of text when item is clicked.*/
 .changeColor:active {
     color: red;
 }
 
-
+/*Add Lobster font to be used in the document.*/
 @font-face {
     font-family: Lobster;
     src: url(fonts/Lobster-Regular.ttf);
 }
 
+/*Add NewTegomin-Regular font to be used in the document.*/
 @font-face {
     font-family: Tegomin;
     src: url(fonts/NewTegomin-Regular.ttf);
 }
 
+/*Change the font of all paragraph sections to be the Tegomin font.*/
 p{
     font-family: Tegomin;
 }
